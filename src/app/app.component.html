@@ -1,0 +1,9 @@
+<h1>
+  {{title}}
+</h1>
+
+<!-- bind to the movable trigger, setting this div's values to the state of the trigger -->
+<div class="movable" [@movable]="moving">
+  I like to move it, move it.
+</div>
+<button type="button" class="btn btn-success" (click)="moveIt()">Move It!</button>
